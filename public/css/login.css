@@ -1,0 +1,53 @@
+:root{
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+
+.contendor-banner{
+    display: none;
+
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    padding-bottom: 30px;
+}
+
+form div {
+    margin-bottom: 30px;
+    padding-top: 40px;
+    width: 60vw;
+    height: 30px;
+
+}
+
+form div input{
+    background-color: white;
+    color: var(--gris-oscuro);
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 60vw;
+    height: 30px;
+}
+
+form div button{
+    background-color: var(--celeste);
+    border: 1px solid var(--celeste);
+    border-radius: 5px;
+    color: white;
+    width: 60vw;
+    height: 30px;
+
+}
+
+form div button:hover{
+    background-color: #0022AA;
+}
