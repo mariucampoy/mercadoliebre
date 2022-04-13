@@ -5,7 +5,7 @@ let app = express()
 
 app.use(express.static(path.resolve(__dirname, "./public")))
 
-app.listen(3002, () => console.log("Corriendo servidor en: http://localhost:3002"))
+app.listen(process.env.PORT || 3002, () => console.log("Corriendo servidor en: http://localhost:3002"))
 
 app.get("/", (req,res)=> {
     res.sendFile(path.resolve(__dirname, "./views/index.html"))
